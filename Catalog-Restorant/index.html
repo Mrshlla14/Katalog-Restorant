@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CulinArt - Katalog restoran terbaik di Indonesia">
+    <meta name="theme-color" content="#ff6b6b">
+    <title>CulinArt - Katalog Restoran</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>CulinArt</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#/" id="home-link" aria-current="page">Beranda</a></li>
+                <li><a href="#/favorite" id="favorite-link">Favorit</a></li>
+                <li><a href="#/add" id="add-link">Tambah Restoran</a></li>
+                <li><a href="#/about" id="about-link">Tentang Kami</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Temukan Restoran Terbaik</h1>
+            <p>Jelajahi berbagai restoran lezat di sekitar Anda dengan mudah dan cepat</p>
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Cari restoran atau masakan..." aria-label="Cari restoran">
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <!-- Content will be loaded here by JavaScript -->
+        <div id="page-container"></div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>CulinArt</span>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#/">Beranda</a></li>
+                <li><a href="#/favorite">Favorit</a></li>
+                <li><a href="#/add">Tambah Restoran</a></li>
+                <li><a href="#/about">Tentang Kami</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 CulinArt - Katalog Restoran | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
